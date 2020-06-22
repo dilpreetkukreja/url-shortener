@@ -28,7 +28,7 @@ app.use(errorController.get404);
 
 const PORT = process.env.PORT || 4000;
 
-const MONGODB_URL = `mongodb+srv://${process.env.MONGO_USER}:${process.env.PASSWORD}@cluster0-hteme.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`;
+const MONGODB_URL = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0-hteme.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`;
 mongoose
   .connect(MONGODB_URL, {
     useNewUrlParser: true,
